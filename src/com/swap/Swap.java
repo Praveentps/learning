@@ -18,8 +18,8 @@ public class Swap {
 
     private static int getLargestNumber(String number) {
         char[] digits = number.toCharArray();
-        for (int i = 0; i < digits.length; ++i) {
-            for (int j = i + 1; j < digits.length; ++j) {
+        for (int i = 0; i < digits.length; i++) {
+            for (int j = i + 1; j < digits.length; j++) {
                 if (digits[i] < digits[j]) {
                     swap(digits, i, j);
                 }
